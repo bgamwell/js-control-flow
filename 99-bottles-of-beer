@@ -1,0 +1,15 @@
+var beerBottles = prompt("How many bottles of beer should we start with?");
+
+for (i = beerBottles; i > 0; i--) {
+    if (i > 1) {
+      console.log(beerBottles + " bottles of beer on the wall,")
+      console.log(beerBottles + " bottles of beer!")
+      console.log("Take one down and pass it around, " + (beerBottles - 1) + " bottles of beer on the wall!");
+      beerBottles--;
+    } if (i == 1) {
+      console.log(beerBottles + " bottle of beer on the wall,")
+      console.log(beerBottles + " bottle of beer!")
+      console.log("Take one down and pass it around...there's no more beer left!");
+      break;
+    }
+}
